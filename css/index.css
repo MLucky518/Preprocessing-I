@@ -1,1 +1,319 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background: url("http://getwallpapers.com/wallpaper/full/f/1/9/129310.jpg");
+  background-size: cover;
+}
+.flexEnd-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.flexCenter-content {
+  display: flex;
+  justify-content: center;
+}
+.flexCenterColumn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paddingMargin {
+  padding: 1%;
+  margin: 1%;
+}
+.navButtonDesign {
+  border-radius: 20%;
+  text-decoration: none;
+}
+hi,
+h2,
+h3 {
+  color: grey;
+}
+.mainContainer header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainContainer header nav button {
+  border-radius: 20%;
+  text-decoration: none;
+  background: url("https://image.shutterstock.com/image-photo/plain-grey-concrete-wall-background-260nw-238269862.jpg");
+  border: 2px solid black;
+  padding: 1%;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .mainContainer header nav button {
+    margin-bottom: 10%;
+  }
+}
+.mainContainer header nav button a {
+  color: black;
+  font-weight: bold;
+}
+.mainContainer button:hover {
+  background: white;
+}
+.mainContainer .nameAndInfoContainer {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  background: url("https://image.shutterstock.com/image-photo/plain-grey-concrete-wall-background-260nw-238269862.jpg");
+  background-size: cover;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .mainContainer .nameAndInfoContainer {
+    width: 70%;
+  }
+}
+.mainContainer .nameAndInfoContainer h1 {
+  font-size: 5rem;
+  padding: 1%;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .mainContainer .nameAndInfoContainer h1 {
+    font-size: 2rem;
+  }
+}
+.mainContainer .nameAndInfoContainer h2 {
+  color: black;
+  font-size: 2rem;
+  padding: 1%;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .mainContainer .nameAndInfoContainer h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+.mainContainer .nameAndInfoContainer h2 a {
+  text-decoration: none;
+  color: black;
+}
+.mainContainer .aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer .aboutMe h3 {
+  font-size: 3rem;
+  padding: 1%;
+  margin: 1%;
+}
+.mainContainer .aboutMeContent {
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  text-align: center;
+  height: 35rem;
+}
+@media (max-width: 500px) {
+  .mainContainer .aboutMeContent {
+    width: 90%;
+    height: 8%;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+.mainContainer .aboutMeContent p {
+  color: ;
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .mainContainer .aboutMeContent p {
+    font-size: 1rem;
+  }
+}
+.mainContainer .workHistory {
+  height: 30rem;
+  width: 70%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .mainContainer .workHistory {
+    padding: 1%;
+    margin: 1%;
+  }
+}
+.mainContainer ul {
+  color: grey;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .mainContainer ul {
+    margin-top: 10%;
+  }
+}
+.mainContainer .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer .skills h3 {
+  font-size: 3rem;
+  padding: 1%;
+  margin: 1%;
+}
+.mainContainer .skillsContent {
+  height: 30rem;
+  width: 70%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .mainContainer .skillsContent {
+    padding: 1%;
+    margin: 1%;
+  }
+}
+.mainContainer .skillsContent ul {
+  color: grey;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .mainContainer .skillsContent ul {
+    margin-top: 10%;
+  }
+}
+.mainContainer footer li a {
+  color: white;
+  text-decoration: none;
+}
